@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" >
+    
+<head>
+        <title>Registration - Coffee Table - QR Application</title>
+        <meta charset="utf-8"/>
+        <meta name="description" content="
+            The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, 
+            Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. 
+            Grab your copy now and get life-time updates for free.
+        "/>
+        <meta name="keywords" content="
+            metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, 
+            Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, 
+            free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, 
+            bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon
+        "/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>      
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Coffee Table - QR Application" />
+        <!-- <meta property="og:url" content="https://keenthemes.com/metronic"/> -->
+        <meta property="og:site_name" content="Metronic by Keenthemes" />
+        <!-- <link rel="canonical" href="https://preview.keenthemes.com/metronic8"/> -->
+        <link rel="shortcut icon" href="../static/media/logos/favicon.ico"/>
+
+        <!--begin::Fonts(mandatory for all pages)-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700"/>        <!--end::Fonts-->
+
+        
+        
+	<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+			<link href="../static/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
+			<link href="../static/css/style.bundle.css" rel="stylesheet" type="text/css"/>
+		<!--end::Global Stylesheets Bundle-->
+        
+
+    <!--begin::Body-->
+    <body  id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu"  class="bg-body position-relative app-blank" >
+        
+        <!--begin::Root-->
+<div class="d-flex flex-column flex-root" id="kt_app_root">
+    <!--begin::Header Section-->
+<div class="mb-0" id="home">
+    <!--begin::Wrapper-->
+    <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg" style="background-image: url(../static/media/svg/illustrations/landing.svg)">
+        <!--begin::Header-->
+<div class="landing-header" 
+    data-kt-sticky="true"
+	data-kt-sticky-name="landing-header"
+	data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+    
+    <!--begin::Container-->
+    <div class="container">
+        <!--begin::Wrapper-->
+        <div class="d-flex align-items-center justify-content-between">
+            <!--begin::Logo-->
+            <div class="d-flex align-items-center flex-equal">
+                <!--begin::Mobile menu toggle-->
+                <button class="btn btn-icon btn-active-color-primary me-3 d-flex d-lg-none" id="kt_landing_menu_toggle">
+                    <i class="ki-duotone ki-abstract-14 fs-2hx"><span class="path1"></span><span class="path2"></span></i>                </button>
+                <!--end::Mobile menu toggle-->
+
+                <!--begin::Logo image-->
+                <a href="{{ url_for('index') }}">
+                    <img alt="Logo" src="../static/media/logos/landing.svg" class="logo-default h-25px h-lg-30px"/>
+                    <img alt="Logo" src="../static/media/logos/landing-dark.svg" class="logo-sticky h-20px h-lg-25px"/>
+                </a>
+                <!--end::Logo image-->
+            </div>
+            <!--end::Logo-->
+
+            <!--begin::Menu wrapper-->
+            <div class="d-lg-block" id="kt_header_nav_wrapper">
+                <div 
+                    class="d-lg-block p-5 p-lg-0"
+
+                    data-kt-drawer="true"
+                    data-kt-drawer-name="landing-menu"
+                    data-kt-drawer-activate="{default: true, lg: false}"
+                    data-kt-drawer-overlay="true"
+                    data-kt-drawer-width="200px"
+                    data-kt-drawer-direction="start"
+                    data-kt-drawer-toggle="#kt_landing_menu_toggle"
+                    
+                    data-kt-swapper="true"
+                    data-kt-swapper-mode="prepend"
+                    data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
+
+                    <!--begin::Menu-->
+                    <div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-600 menu-state-title-primary nav nav-flush fs-5 fw-semibold" id="kt_landing_menu">
+                                                <!--begin::Menu item-->
+                        <div class="menu-item">
+                            <!--begin::Menu link-->
+                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="{{ url_for('index') }}" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">
+                                Home                            </a>
+                            <!--end::Menu link-->
+                        </div>
+                        <!--end::Menu item-->
+                                                <!--begin::Menu item-->
+                        <div class="menu-item">
+                            <!--begin::Menu link-->
+                            <a class="menu-link nav-link  py-3 px-4 px-xxl-6" href="{{ url_for('about') }}" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">
+                                About Us                            </a>
+                            <!--end::Menu link-->
+                        </div>
+                        <!--end::Menu item-->
+                                                <!--begin::Menu item-->
+                        <div class="menu-item">
+                            <!--begin::Menu link-->
+                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="{{ url_for('registration') }}" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">
+                                Candidate Registration                          </a>
+                            <!--end::Menu link-->
+                        </div>
+                        <!--end::Menu item-->
+                                                <!--begin::Menu item-->
+                        <div class="menu-item">
+                            <!--begin::Menu link-->
+                            <a class="menu-link nav-link  py-3 px-4 px-xxl-6" href="{{ url_for('visitor') }}" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">
+                                Visitor Registration                            </a>
+                            <!--end::Menu link-->
+                        </div>
+                        <!--end::Menu item-->
+                                               
+                                                <!--begin::Menu item-->
+                        <div class="menu-item">
+                            <!--begin::Menu link-->
+                            <a class="menu-link nav-link  py-3 px-4 px-xxl-6" href="{{ url_for('contact') }}" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">
+                                Contact Us                            </a>
+                            <!--end::Menu link-->
+                        </div>
+                        <!--end::Menu item-->
+                                            </div>
+                                            <!--begin::Menu item-->
+<div class="menu-item">
+    <!--begin::Menu link-->
+    <a class="btn btn-primary nav-link py-3 px-4 px-xxl-6" href="{{ url_for('event_index') }}" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">
+        Admin Login
+    </a>
+    <!--end::Menu link-->
+</div>
+<!--end::Menu item-->
+                    <!--end::Menu-->
+                </div>
+            </div>
+            <!--end::Menu wrapper-->
+
+            <!--begin::Toolbar-->
+            <div class="flex-equal text-end ms-1">
+                <a href="{{ url_for('generate_qr') }}" class="btn btn-success">Download QR Code</a>
+            </div>
+            <!--end::Toolbar-->
+        </div>
+        <!--end::Wrapper-->
+    </div>
+    <!--end::Container-->
+</div>
+<!--end::Header-->    
+
+        
+
+
+
+ 
+
+ 
+    
+    </div>
+    <!--end::Wrapper-->
+
+     
+</div>
+<!--end::Header Section-->
+
+
+
+             </div>  
+            <!--end::Col-->   
+
+           
+
+          
+        </div>
+        <!--end::Row-->   
+
+         <!--begin::Root-->
+<div class="d-flex flex-column flex-root" id="kt_app_root">
+    <!--begin::Page bg image-->
+<style>
+    body {
+        background-image: url('../static/media/auth/bg4.jpg');
+    }
+
+    [data-bs-theme="dark"] body {
+        background-image: url('../static/media/auth/bg4-dark.jpg');
+    }
+</style>
+<!--end::Page bg image-->
+
+<!--begin::Authentication - Sign-up -->
+<div class="d-flex flex-column flex-column-fluid flex-lg-row">
+    <!--begin::Aside-->
+    <div class="d-flex flex-center w-lg-50 pt-15 pt-lg-0 px-10">              
+        <!--begin::Aside-->
+        <div class="d-flex flex-center flex-lg-start flex-column">              
+            <!--begin::Logo-->
+            <a href="{{ url_for('index') }}" class="mb-7">
+                <img alt="Logo" src="../static/media/logos/custom-3.svg"/>
+            </a>    
+            <!--end::Logo-->            
+
+            <!--begin::Title-->
+            <h2 class="text-white fw-normal m-0"> 
+                Branding tools designed for your business
+            </h2>  
+            <!--end::Title-->         
+        </div>
+        <!--begin::Aside-->    
+    </div>
+    <!--begin::Aside-->
+
+    <!--begin::Body-->
+    <div class="d-flex flex-column-fluid flex-lg-row-auto justify-content-center justify-content-lg-end p-12 p-lg-20">
+        <!--begin::Card-->
+        <div class="bg-body d-flex flex-column align-items-stretch flex-center rounded-4 w-md-600px p-20">
+            <!--begin::Wrapper-->
+            <div class="d-flex flex-center flex-column flex-column-fluid px-lg-10">
+                
+<!--begin::Form-->
+<form class="form w-100" novalidate="novalidate" id="kt_sign_up_form" data-kt-redirect-url="/metronic8/demo1/../demo1/authentication/layouts/creative/sign-in.html" action="/qr-generation", method="POST" enctype="multipart/form-data">
+    <!--begin::Heading-->
+    <div class="text-center mb-11">
+        <!--begin::Title-->
+        <h1 class="text-gray-900 fw-bolder mb-3">
+          Generate QR Code Now
+        </h1>
+        <!--end::Title-->
+    </div>
+    <!--begin::Heading-->
+
+    
+    
+
+    <!--begin::Input group--->
+    <div class="fv-row mb-8">
+        <!--begin::Phone Number-->
+        <input type="text" placeholder="Enter Phone Number" name="phone_number" autocomplete="off" class="form-control bg-transparent"/> 
+        <!--end::Phone Number-->
+    </div>
+    
+
+    <!--begin::Input group--->
+    <div class="fv-row mb-8">
+        <!--begin::Event-->
+        <select name="event_name" class="form-control bg-transparent">
+            <option value="0">Select Event</option>
+            <option value="1">Event 1</option>
+            <option value="2">Event 2</option>
+        </select>
+        <!--end::Event-->
+    </div>
+
+   
+
+    <!--begin::Submit button-->
+    <div class="d-grid mb-10">
+        <button type="submit" id="kt_sign_up_submit" class="btn btn-primary">
+            
+<!--begin::Indicator label-->
+<span class="indicator-label">
+    Generate Now</span>
+<!--end::Indicator label-->
+
+<!--begin::Indicator progress-->
+<span class="indicator-progress">
+    Please wait...    <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+</span>
+<!--end::Indicator progress-->        </button>
+    </div>
+    <!--end::Submit button-->
+    <!--begin::Sign up-->
+    <div class="text-gray-500 text-center fw-semibold fs-6">
+        New User?
+
+        <a href="{{ url_for('registration') }}" class="link-primary fw-semibold">
+            Register Now
+        </a>
+    </div>
+    <!--end::Sign up-->
+    
+</form>
+<!--end::Form--> 
+
+            </div>
+            <!--end::Wrapper-->
+        </div>
+        <!--end::Card-->
+    </div>
+    <!--end::Body-->
+</div>
+<!--end::Authentication - Sign-up--></div>
+<!--end::Root-->
+
+          
+    </div>
+    <!--end::Container-->
+</div>
+<!--end::Testimonials Section-->
+ 
+ 
+<!--begin::Footer Section-->
+<div class="mb-0">
+    <!--begin::Curve top-->
+<div class="landing-curve landing-dark-color ">
+    <svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
+    </svg>
+</div>
+<!--end::Curve top--> 
+ 
+    <!--begin::Wrapper-->
+    <div class="landing-dark-bg pt-20">
+        <!--begin::Container-->   
+<div class="container">
+    <!--begin::Row-->
+    <div class="row py-10 py-lg-20">
+        <!--begin::Col-->
+        <div class="col-lg-6 pe-lg-16 mb-10 mb-lg-0">
+            <!--begin::Block-->
+            <div class="rounded landing-dark-border p-9 mb-10">
+                <!--begin::Title-->
+                <h2 class="text-white">Would you need a Custom License?</h2>
+                <!--end::Title-->
+
+                <!--begin::Text-->
+                <span class="fw-normal fs-4 text-gray-700">
+                    Email us to 
+                    
+                    <a href="#" class="text-white opacity-50 text-hover-primary">support@keenthemes.com</a>                    
+                </span>
+                <!--end::Text-->
+            </div>
+            <!--end::Block-->
+
+            <!--begin::Block-->
+            <div class="rounded landing-dark-border p-9">
+                <!--begin::Title-->
+                <h2 class="text-white">How About a Custom Project?</h2>
+                <!--end::Title-->
+
+                <!--begin::Text-->
+                <span class="fw-normal fs-4 text-gray-700">
+                    Use Our Custom Development Service.  
+                    
+                    <a href="#" class="text-white opacity-50 text-hover-primary">Click to Get a Quote</a>                    
+                </span>
+                <!--end::Text-->
+            </div>
+            <!--end::Block-->
+        </div>
+        <!--end::Col-->
+
+        <!--begin::Col-->
+        <div class="col-lg-6 ps-lg-16">
+            <!--begin::Navs-->
+            <div class="d-flex justify-content-center">
+                <!--begin::Links-->
+                <div class="d-flex fw-semibold flex-column me-20">
+                    <!--begin::Subtitle-->
+                    <h4 class="fw-bold text-gray-500 mb-6">More for Metronic</h4>
+                    <!--end::Subtitle-->
+
+                    <!--begin::Link-->
+                    <a href="https://keenthemes.com/faqs" class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</a>  
+                    <!--end::Link-->  
+
+                    <!--begin::Link-->
+                    <a href="https://preview.keenthemes.com/html/metronic/docs" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Documentaions</a>  
+                    <!--end::Link-->  
+
+                    <!--begin::Link-->
+                    <a href="https://www.youtube.com/c/KeenThemesTuts/videos" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Video Tuts</a>  
+                    <!--end::Link--> 
+
+                    <!--begin::Link-->
+                    <a href="https://preview.keenthemes.com/html/metronic/docs/getting-started/changelog" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Changelog</a>  
+                    <!--end::Link--> 
+
+                    <!--begin::Link-->
+                    <a href="https://devs.keenthemes.com/" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Support Forum</a>  
+                    <!--end::Link--> 
+
+                    <!--begin::Link-->
+                    <a href="https://keenthemes.com/blog" class="text-white opacity-50 text-hover-primary fs-5">Blog</a>  
+                    <!--end::Link-->  
+                </div>
+                <!--end::Links-->
+
+                <!--begin::Links-->
+                <div class="d-flex fw-semibold flex-column ms-lg-20">
+                    <!--begin::Subtitle-->
+                    <h4 class="fw-bold text-gray-500 mb-6">Stay Connected</h4>
+                    <!--end::Subtitle-->
+
+                    <!--begin::Link-->
+                    <a href="https://www.facebook.com/keenthemes" class="mb-6">
+                        <img src="../static/media/svg/brand-logos/facebook-4.svg" class="h-20px me-2" alt=""/> 
+
+                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Facebook</span>  
+                    </a>  
+                    <!--end::Link-->  
+
+                    <!--begin::Link-->
+                    <a href="https://github.com/KeenthemesHub" class="mb-6">
+                        <img src="../static/media/svg/brand-logos/github.svg" class="h-20px me-2" alt=""/> 
+
+                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Github</span>  
+                    </a> 
+                    <!--end::Link-->  
+
+                    <!--begin::Link-->
+                    <a href="https://twitter.com/keenthemes" class="mb-6">
+                        <img src="../static/media/svg/brand-logos/twitter.svg" class="h-20px me-2" alt=""/> 
+
+                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Twitter</span>  
+                    </a>  
+                    <!--end::Link--> 
+
+                    <!--begin::Link-->
+                    <a href="https://dribbble.com/keenthemes" class="mb-6">
+                        <img src="../static/media/svg/brand-logos/dribbble-icon-1.svg" class="h-20px me-2" alt=""/> 
+
+                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Dribbble</span>  
+                    </a> 
+                    <!--end::Link--> 
+
+                    <!--begin::Link-->
+                    <a href="https://www.instagram.com/keenthemes" class="mb-6">
+                        <img src="../static/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2" alt=""/> 
+
+                        <span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram</span>  
+                    </a>  
+                    <!--end::Link-->                 
+                </div>
+                <!--end::Links-->
+            </div>
+            <!--end::Navs-->
+        </div>
+        <!--end::Col-->
+    </div>
+    <!--end::Row-->    
+</div>
+<!--end::Container-->    
+
+        <!--begin::Separator-->
+<div class="landing-dark-separator"></div>
+<!--end::Separator-->
+
+<!--begin::Container-->
+<div class="container">
+    <!--begin::Wrapper-->
+    <div class="d-flex flex-column flex-md-row flex-stack py-7 py-lg-10">
+        <!--begin::Copyright-->
+        <div class="d-flex align-items-center order-2 order-md-1">
+            <!--begin::Logo-->
+            <a href="{{ url_for('index') }}">
+                <img alt="Logo" src="../static/media/logos/landing.svg" class="h-15px h-md-20px"/>
+            </a>
+            <!--end::Logo image-->
+
+            <!--begin::Logo image-->
+            <span class="mx-5 fs-6 fw-semibold text-gray-600 pt-1" href="https://keenthemes.com/">
+                &copy; 2024 Keenthemes Inc.
+            </span>
+            <!--end::Logo image-->
+        </div>
+        <!--end::Copyright-->
+
+        <!--begin::Menu-->
+        <ul class="menu menu-gray-600 menu-hover-primary fw-semibold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
+            <li class="menu-item">
+                <a href="#" target="_blank" class="menu-link px-2">About</a>
+            </li>
+
+            <li class="menu-item mx-5">
+                <a href="#" target="_blank" class="menu-link px-2">Support</a>
+            </li>
+
+            <li class="menu-item">
+                <a href="#" target="_blank" class="menu-link px-2">Purchase</a>
+            </li>
+        </ul>
+        <!--end::Menu-->
+    </div>
+    <!--end::Wrapper-->
+</div>
+<!--end::Container-->
+    </div>
+    <!--end::Wrapper-->
+</div>
+ <!--end::Footer Section-->
+ 
+<!--begin::Scrolltop-->
+<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+	<i class="ki-duotone ki-arrow-up"><span class="path1"></span><span class="path2"></span></i></div>
+<!--end::Scrolltop-->
+</div>
+<!--end::Root-->
+		
+
+<!--begin::Scrolltop-->
+<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+	<i class="ki-duotone ki-arrow-up"><span class="path1"></span><span class="path2"></span></i></div>
+<!--end::Scrolltop-->
+
+        
+<!--begin::Javascript-->
+<script>       var hostUrl = "../static/index.html";        </script>
+
+<!--begin::Global Javascript Bundle(mandatory for all pages)-->
+		<script src="../static/plugins/global/plugins.bundle.js"></script>
+		<script src="../static/js/scripts.bundle.js"></script>
+	<!--end::Global Javascript Bundle-->
+
+<!--begin::Vendors Javascript(used for this page only)-->
+		<script src="../static/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
+		<script src="../static/plugins/custom/typedjs/typedjs.bundle.js"></script>
+	<!--end::Vendors Javascript-->
+
+<!--begin::Custom Javascript(used for this page only)-->
+		<script src="../static/js/custom/landing.js"></script>
+		<script src="../static/js/custom/pages/pricing/general.js"></script>
+	<!--end::Custom Javascript-->
+<!--end::Javascript-->
+        
+            </body>
+    <!--end::Body-->
+</html>
